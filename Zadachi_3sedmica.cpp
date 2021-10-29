@@ -6,6 +6,7 @@
 using namespace std;
 
 int main(){
+    //редицата ai = a^i +3i.
     int number, ai = 0;
     
     cin>>number;
@@ -17,6 +18,7 @@ int main(){
     }
 
 
+    //Най-голямо отрицателно число.
     int numbers, currentNumber, biggestNegativeNumber;
 
     cin >> numbers >> currentNumber;
@@ -33,6 +35,7 @@ int main(){
     cout<<biggestNegativeNumber;
 
 
+    // Фибоначи редиа.
     int n, firstNumber = 0, secondNumber = 1, nextNumber = 0;
 
     cin>>n;
@@ -53,7 +56,7 @@ int main(){
         cout << nextNumber << ", ";
     }
 
-
+    // Събиране на всички числа до въвеждане на 0.
     int summary = 0, currentNumber;
 
     do{
@@ -63,7 +66,7 @@ int main(){
 
     cout<<summary;
 
-
+    // Сбор на цифрите на дадено число
     int summary = 0, number;
 
     cin >> number;
@@ -75,6 +78,8 @@ int main(){
 
     cout << summary;
 
+    
+    // число N на сепен M.
     int number, powerBy, answer;
 
     cin >> number >> powerBy;
@@ -92,7 +97,8 @@ int main(){
     }
     cout << answer;
 
-
+    // Дали дадено число е просто
+    
     int number;
     bool isPrime = true;
 
@@ -113,8 +119,7 @@ int main(){
         cout << "YES";
     }else{cout << "NO";}
 
-    return 0;
-
+    // Всички главни букви без гласните
 
     for(int index = 65; index <= 90 ; index++){
         if(index != 65 && index != 69 && index != 73 && index != 79 && index != 85){
@@ -122,6 +127,7 @@ int main(){
         }
     }
 
+    // Квадрат NxN, главен диагонал 0, над него + и под него -
     int n;
 
     printf("Enter an integer:\n");
@@ -138,4 +144,5 @@ int main(){
         }
         cout << endl;
     }
+    return 0;
 }
